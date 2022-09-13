@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  basePath: '/ajarn-pro-electrical-services',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
