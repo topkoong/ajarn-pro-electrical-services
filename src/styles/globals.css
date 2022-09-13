@@ -1,0 +1,10 @@
+html,
+body {
+  @apply bg-white h-screen;
+  height: 100%;
+  font-family: 'EQ TH', sans-serif;
+}
+
+.container {
+  @apply mx-auto max-w-[1440px] px-6 md:px-10 lg:px-48 xl:px-72;
+}
