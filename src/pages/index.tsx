@@ -32,6 +32,12 @@ const Home: NextPage = () => {
         </article>
       </section>
       <section className='my-8 w-full'>
+        <h2 className='z-10 my-2 text-center uppercase ext-[#363845] font-bold text-lg'>
+          Increase Safety and Reliability
+        </h2>
+        <h2 className='z-10 my-2 text-center uppercase ext-[#363845] font-bold text-lg'>
+          Operations Upgrade
+        </h2>
         <h3 className='my-2 text-center text-[#363845] font-bold text-xl md:text-2xl'>
           บริษัทมีความชำนาญและเชี่ยวชาญในการออกแบบระบบควบคุมอัตโนมัติ
           งานออกแบบเขียนโปรแกรมควบคุมเครื่องจักร

@@ -20,7 +20,8 @@ const Services: NextPage = () => {
       </Head>
       <main className='container p-8'>
         <h1 className='my-2 text-center text-[#DFB614] uppercase font-bold text-xl md:text-2xl'>
-          Our Services
+          Our Field Service professionals ensure minimized downtime while
+          meeting all safety standards, maximizing your ROI.
         </h1>
         <h2 className='my-2 text-center text-[#363845] font-bold text-lg md:text-xl'>
           บริษัทมีความชำนาญและเชี่ยวชาญในการออกแบบระบบควบคุมอัตโนมัติ

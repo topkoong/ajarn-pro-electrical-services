@@ -8,7 +8,7 @@ export const Navbar: FunctionComponent = () => {
       <nav className='bg-[#363845] px-2 sm:px-4 py-2.5'>
         <div className='flex flex-wrap justify-between items-center mx-auto'>
           <Link href='/' className='flex items-center'>
-            <span className='font-eqTH text-[#DFB614] self-center text-lg md:text-2xl font-bold whitespace-nowrap'>
+            <span className='font-eqTH text-[#DFB614] self-center text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold whitespace-nowrap uppercase'>
               อาจารย์ &quot;โปร&quot; Electrical Services
             </span>
           </Link>
