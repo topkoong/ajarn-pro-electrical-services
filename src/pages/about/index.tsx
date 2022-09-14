@@ -5,7 +5,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Ajarn &quot;PRO&quot; - รับออกแบบติดตั้งงานระบบไฟฟ้า</title>
+        <title>Ajarn &quot;PRO&quot; - About</title>
         <meta
           name='description'
           content='รับเหมาไฟฟ้า ติดตั้งระบบไฟฟ้า เหมาไฟฟ้า เดินสายไฟ เดินไฟเมน วางระบบไฟฟ้า เดินไฟโรงงาน งานไฟฟ้า ตรวจไฟฟ้า ประกอบตู้ไฟฟ้า ตู้คอนโทรลไฟฟ้า หม้อแปลงไฟฟ้า'
@@ -15,6 +15,15 @@ const About: NextPage = () => {
         <meta
           property='og:title'
           content='รับแก้ไขระบบไฟฟ้า รับเดินสายไฟ เดินราง รับลากสาย รับทำ Cable Tray,Wireway Cabinet,Cable Ladder รับซ่อมบำรุง รับปรับปรุง ดูแลระบบไฟฟ้าโรงงาน อุตสาหกรรรม ควบคุม'
+        />
+        <meta
+          property='og:description'
+          content='Ajarn "PRO" Electrical Services, Inc. (APES) is a control
+            systems integration company offering expertise in custom automation
+            and control systems solutions. We provide automation services from
+            conception through completion on a fixed price or T&M basis. APES
+            can design and develop a wide range of control systems utilizing any
+            style of PLCs.'
         />
       </Head>
       <main className='container p-8'>

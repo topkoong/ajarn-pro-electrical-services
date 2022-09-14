@@ -9,7 +9,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Ajarn &quot;PRO&quot; - Electrical Services</title>
+        <title>
+          Ajarn &quot;PRO&quot; - Electrical Services -
+          รับออกแบบติดตั้งงานระบบไฟฟ้า
+        </title>
         <meta
           name='description'
           content='รับออกแบบ ติดตั้ง งานระบบไฟฟ้า - งานบำรุงรักษา ปรับปรุงตู้ไฟฟ้า เหมาไฟฟ้า เดินสายไฟ เดินไฟเมน วางระบบไฟฟ้า เดินไฟโรงงาน งานไฟฟ้า ตรวจไฟฟ้า ประกอบตู้ไฟฟ้า ตู้คอนโทรลไฟฟ้า หม้อแปลงไฟฟ้า'

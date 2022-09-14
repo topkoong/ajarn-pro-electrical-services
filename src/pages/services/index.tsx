@@ -7,7 +7,7 @@ const Services: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Ajarn &quot;PRO&quot; - รับออกแบบติดตั้งงานระบบไฟฟ้า</title>
+        <title>Ajarn &quot;PRO&quot; - Services</title>
         <meta
           name='description'
           content='รับทำระบบควบคุมอัตโนมัติ Automation ด้วย PLC, SCADA, HMI รับติดตั้งโซล่าเซลล์ เดินไฟเข้าเครื่องจักร ติดตั้งแผงควบคุมไฟฟ้าภายในบ้าน ปรับปรุงตู้ไฟฟ้า  หม้อแปลงไฟฟ้า [Transformer] งานปรับปรุงเครื่องจักร PLC'

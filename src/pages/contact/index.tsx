@@ -41,7 +41,7 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Ajarn &quot;PRO&quot; - รับออกแบบติดตั้งงานระบบไฟฟ้า</title>
+        <title>Ajarn &quot;PRO&quot; - Contact</title>
         <meta
           name='description'
           content='รับเหมาไฟฟ้า ติดตั้งระบบไฟฟ้า เหมาไฟฟ้า เดินสายไฟ เดินไฟเมน วางระบบไฟฟ้า เดินไฟโรงงาน งานไฟฟ้า ตรวจไฟฟ้า ประกอบตู้ไฟฟ้า ตู้คอนโทรลไฟฟ้า หม้อแปลงไฟฟ้า'
@@ -51,6 +51,10 @@ const Contact: NextPage = () => {
         <meta
           property='og:title'
           content='รับแก้ไขระบบไฟฟ้า รับเดินสายไฟ เดินราง รับลากสาย รับทำ Cable Tray,Wireway Cabinet,Cable Ladder รับซ่อมบำรุง รับปรับปรุง ดูแลระบบไฟฟ้าโรงงาน อุตสาหกรรรม ควบคุม'
+        />
+        <meta
+          property='og:description'
+          content='รับตรวจระบบไฟฟ้า ปรับปรุงระบบไฟฟ้า รับทำตู้ Control Panel แบบต่างๆ ตามความต้องการ'
         />
       </Head>
       <main className='container p-8'>
