@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
-export const Navbar: FunctionComponent = () => {
+const Navbar: FunctionComponent = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
     <header>
@@ -82,3 +82,5 @@ export const Navbar: FunctionComponent = () => {
     </header>
   );
 };
+
+export default Navbar;

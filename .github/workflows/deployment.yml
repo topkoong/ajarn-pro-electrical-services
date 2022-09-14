@@ -36,6 +36,11 @@ jobs:
       - name: Installing Dependencies
         run: pnpm install
 
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo NEXT_PUBLIC_GOOGLE_MAP_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_MAP_API_KEY }} >> .env
+
       - name: Lint
         run: pnpm lint
 

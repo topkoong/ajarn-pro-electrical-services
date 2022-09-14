@@ -1,7 +1,33 @@
+import { Wrapper as MapWrapper, Status } from '@googlemaps/react-wrapper';
+
 import Head from 'next/head';
+import Map from '../../components/Map';
+import Marker from '../../components/Marker';
 import type { NextPage } from 'next';
+import { ReactElement } from 'react';
 
 const Contact: NextPage = () => {
+  const center: google.maps.LatLngLiteral = {
+    lat: 13.7677238,
+    lng: 100.6776538,
+  };
+  const zoom = 19.51;
+  const position = { lat: 13.767917497113437, lng: 100.67764904834 };
+  const markerTitle = 'อาจารย์ "โปร" Electrical Services';
+  const markerLabelStyle = {
+    text: markerTitle,
+    fontFamily: 'EQ TH',
+    fontWeight: 'bold',
+    color: 'black',
+    fontSize: '28px',
+  };
+
+  const renderMap = (status: Status): ReactElement => {
+    if (status === Status.LOADING) return <h3>{status} ..</h3>;
+    if (status === Status.FAILURE) return <h3>{status} ...</h3>;
+    return <h3>Not working</h3>;
+    // return null;
+  };
   return (
     <>
       <Head>
@@ -27,7 +53,19 @@ const Contact: NextPage = () => {
             Services
           </h2>
         </section>
-        <section className='p-8'>
+        <section className='p-8 h-full'>
+          <MapWrapper
+            apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY || ''}
+            render={renderMap}
+          >
+            <Map center={center} zoom={zoom}>
+              <Marker
+                position={position}
+                label={markerLabelStyle}
+                title={markerTitle}
+              />
+            </Map>
+          </MapWrapper>
           <h2 className='my-4 text-center text-[#363845] font-bold text-lg md:text-xl'>
             General Contact
           </h2>
