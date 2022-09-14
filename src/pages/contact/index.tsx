@@ -1,12 +1,14 @@
 import { Wrapper as MapWrapper, Status } from '@googlemaps/react-wrapper';
 
 import Head from 'next/head';
-import Map from '../../components/Map';
-import Marker from '../../components/Marker';
+import Map from '@components/Map';
+import Marker from '@components/Marker';
 import type { NextPage } from 'next';
 import { ReactElement } from 'react';
+import useBreakpoints from '@hooks/useBreakpoints';
 
 const Contact: NextPage = () => {
+  const { isXs, isSm, isMd, isLg } = useBreakpoints();
   const center: google.maps.LatLngLiteral = {
     lat: 13.7677238,
     lng: 100.6776538,
@@ -19,7 +21,15 @@ const Contact: NextPage = () => {
     fontFamily: 'EQ TH',
     fontWeight: 'bold',
     color: 'black',
-    fontSize: '28px',
+    fontSize: isXs
+      ? '17px'
+      : isSm
+      ? '20px'
+      : isMd
+      ? '24px'
+      : isLg
+      ? '28px'
+      : '32px',
   };
 
   const renderMap = (status: Status): ReactElement => {

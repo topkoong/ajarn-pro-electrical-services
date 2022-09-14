@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import ImageGallery from '../../components/ImageGallery';
+import ImageGallery from '@components/ImageGallery';
 // import Image from 'next/image';
 import type { NextPage } from 'next';
 
