@@ -1,6 +1,7 @@
 import {
   Children,
   FunctionComponent,
+  ReactElement,
   ReactNode,
   cloneElement,
   isValidElement,
@@ -36,7 +37,7 @@ const Map: FunctionComponent<MapProps> = ({ center, zoom, children }) => {
       {Children.map(children, (child) => {
         if (isValidElement(child)) {
           // set the map prop on the child component
-          return cloneElement(child, { map });
+          return cloneElement(child as ReactElement<any>, { map });
         }
       })}
     </>
