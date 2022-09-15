@@ -18,7 +18,7 @@ const Contact: NextPage = () => {
   const markerTitle = 'อาจารย์ "โปร" Electrical Services';
   const markerLabelStyle = {
     text: markerTitle,
-    fontFamily: 'EQ TH',
+    fontFamily: 'eqTH',
     fontWeight: 'bold',
     color: 'black',
     fontSize: isXs
@@ -30,6 +30,7 @@ const Contact: NextPage = () => {
       : isLg
       ? '28px'
       : '32px',
+    className: 'text-xl md:text-2xl font-bold text-center uppercase',
   };
 
   const renderMap = (status: Status): ReactElement => {
