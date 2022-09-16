@@ -11,7 +11,7 @@ const Navbar: FunctionComponent = () => {
           <Link href='/'>
             <div className='flex items-center'>
               <img
-                src='/icons/logo.svg'
+                src='./icons/logo.svg'
                 className='mr-3 h-6 sm:h-9'
                 alt='Ajarn "PRO" Electrical Services Logo'
               />
