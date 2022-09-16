@@ -10,7 +10,7 @@ const Navbar: FunctionComponent = () => {
         <div className='flex flex-wrap justify-between items-center mx-auto'>
           <Link href='/' className='flex items-center'>
             <span className='font-eqTH text-[#DFB614] self-center text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold whitespace-nowrap uppercase'>
-              อาจารย์ &quot;โปร&quot; Electrical Services
+              APES
             </span>
           </Link>
           <button
