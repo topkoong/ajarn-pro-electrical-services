@@ -6,12 +6,19 @@ const Navbar: FunctionComponent = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
     <header>
-      <nav className='bg-[#363845] px-2 sm:px-4 py-2.5'>
+      <nav className='bg-white px-2 sm:px-4 py-2.5'>
         <div className='flex flex-wrap justify-between items-center mx-auto'>
-          <Link href='/' className='flex items-center'>
-            <span className='font-eqTH text-[#DFB614] self-center text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold whitespace-nowrap uppercase'>
-              APES
-            </span>
+          <Link href='/'>
+            <div className='flex items-center'>
+              <img
+                src='/icons/logo.svg'
+                className='mr-3 h-6 sm:h-9'
+                alt='Ajarn "PRO" Electrical Services Logo'
+              />
+              <span className='self-center text-xl font-semibold whitespace-nowrap'>
+                Electrical Services
+              </span>
+            </div>
           </Link>
           <button
             data-collapse-toggle='navbar-default'
@@ -58,22 +65,22 @@ const Navbar: FunctionComponent = () => {
             } w-full md:block md:w-auto`}
             id='navbar-default'
           >
-            <ul className='flex flex-col p-4 mt-4 bg-[#363845] rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
-              <li className='uppercase font-bold text-base block py-2 pr-4 pl-3 text-[#DFB614] rounded md:p-0'>
+            <ul className='flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0'>
+              <li className='uppercase font-medium text-base block py-2 pr-4 pl-3 text-black rounded md:p-0'>
                 <Link href='/' aria-current='page'>
                   Home
                 </Link>
               </li>
-              <li className='uppercase font-bold text-base block py-2 pr-4 pl-3 text-[#DFB614] rounded md:p-0'>
+              <li className='uppercase font-medium text-base block py-2 pr-4 pl-3 text-black rounded md:p-0'>
                 <Link href='/about'>About</Link>
               </li>
-              <li className='uppercase font-bold text-base block py-2 pr-4 pl-3 text-[#DFB614] rounded md:p-0'>
+              <li className='uppercase font-medium text-base block py-2 pr-4 pl-3 text-black rounded md:p-0'>
                 <Link href='/services'>Services</Link>
               </li>
-              <li className='uppercase font-bold text-base block py-2 pr-4 pl-3 text-[#DFB614] rounded md:p-0'>
+              <li className='uppercase font-medium text-base block py-2 pr-4 pl-3 text-black rounded md:p-0'>
                 <Link href='/pricing'>Pricing</Link>
               </li>
-              <li className='uppercase font-bold text-base block py-2 pr-4 pl-3 text-[#DFB614] rounded md:p-0'>
+              <li className='uppercase font-medium text-base block py-2 pr-4 pl-3 text-black rounded md:p-0'>
                 <Link href='/contact'>Contact</Link>
               </li>
             </ul>

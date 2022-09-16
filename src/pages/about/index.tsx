@@ -35,6 +35,21 @@ const About: NextPage = () => {
             Content is coming soon
           </h2>
         </section>
+        <section
+          className={`h-full w-full p-8 md:p-20 bg-center bg-no-repeat bg-cover bg-[url('https://d2wvwvig0d1mx7.cloudfront.net/data/org/22246/media/img/cache/1920x0/2301752_1920x0.jpg')]`}
+        >
+          <h1 className='z-10 my-2 text-center uppercase text-[#DFB614] font-bold text-xl md:text-2xl'>
+            Residential Electrical Repair and Installation Services in Bangkok
+            area
+          </h1>
+          <h2 className='z-10 my-2 text-center uppercase text-white font-bold text-lg'>
+            Your Local Electricians in Bangkok
+          </h2>
+          <h3 className='z-10 my-2 text-center uppercase text-white font-semibold text-base'>
+            Welcome to Ajarn &quot;PRO&quot; Electrical Services. The Best Value
+            Electricians Since 2020!
+          </h3>
+        </section>
         <section className='p-8'>
           <p className='text-xs md:text-sm lg:text-base'>
             Ajarn &quot;PRO&quot; Electrical Services, Inc. (APES) is a control

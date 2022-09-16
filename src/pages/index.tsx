@@ -1,24 +1,20 @@
+import CallToAction from '@components/CallToAction';
+import Feature from '@components/Feature';
+import Hero from '@components/Hero';
 import type { NextPage } from 'next';
+import Reliability from '@components/Reliability';
+import { useRef } from 'react';
 
 const Home: NextPage = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const handleClick = () => ref.current?.scrollIntoView({ behavior: 'smooth' });
   return (
     <main className='container p-8'>
-      <section
-        className={`h-full w-full p-8 md:p-20 bg-center bg-no-repeat bg-cover bg-[url('https://d2wvwvig0d1mx7.cloudfront.net/data/org/22246/media/img/cache/1920x0/2301752_1920x0.jpg')]`}
-      >
-        <h1 className='z-10 my-2 text-center uppercase text-[#DFB614] font-bold text-xl md:text-2xl'>
-          Residential Electrical Repair and Installation Services in Bangkok
-          area
-        </h1>
-        <h2 className='z-10 my-2 text-center uppercase text-white font-bold text-lg'>
-          Your Local Electricians in Bangkok
-        </h2>
-        <h3 className='z-10 my-2 text-center uppercase text-white font-semibold text-base'>
-          Welcome to Ajarn &quot;PRO&quot; Electrical Services. The Best Value
-          Electricians Since 2020!
-        </h3>
-      </section>
-      <section className='my-8 w-full grid grid-cols-1 grid-rows-1 md:grid-cols-3'>
+      <Hero onScrollClick={handleClick} />
+      <Feature ref={ref} />
+      <CallToAction />
+      <Reliability />
+      {/* <section className='my-8 w-full grid grid-cols-1 grid-rows-1 md:grid-cols-3'>
         <div className='col-span-1 flex justify-center'>
           <img src='https://www.keefes.com/wp-content/uploads/2022/05/Panel-box-06-1479x1536.jpg' />
         </div>
@@ -91,7 +87,7 @@ const Home: NextPage = () => {
             รับเขียนโปรแกรม PLC ติดต่อ Touch screen , HMI , PANEL
           </li>
         </ul>
-      </section>
+      </section> */}
     </main>
   );
 };

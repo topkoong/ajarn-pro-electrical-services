@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        eqTH: ['EQ TH'],
+        'DM Sans': ['DM Sans', 'Montserrat', 'sans-serif'],
       },
     },
   },
