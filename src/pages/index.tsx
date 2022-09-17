@@ -1,5 +1,7 @@
 import CallToAction from '@components/CallToAction';
+import Charity from '@components/Charity';
 import Feature from '@components/Feature';
+import GetInTouch from '@components/GetInTouch';
 import Hero from '@components/Hero';
 import type { NextPage } from 'next';
 import Reliability from '@components/Reliability';
@@ -14,6 +16,8 @@ const Home: NextPage = () => {
       <Feature ref={ref} />
       <CallToAction />
       <Reliability />
+      <Charity />
+      <GetInTouch />
       {/* <section className='my-8 w-full grid grid-cols-1 grid-rows-1 md:grid-cols-3'>
         <div className='col-span-1 flex justify-center'>
           <img src='https://www.keefes.com/wp-content/uploads/2022/05/Panel-box-06-1479x1536.jpg' />

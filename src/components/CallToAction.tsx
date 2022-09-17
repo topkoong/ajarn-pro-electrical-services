@@ -5,8 +5,8 @@ import Card from './Card';
 import { FunctionComponent } from 'react';
 
 const CallToAction: FunctionComponent = () => (
-  <section className='mt-20 xl:p-8 h-full'>
-    <div className='xl:px-20'>
+  <section className='mt-20 h-full'>
+    <article className=''>
       <div className='mb-20'>
         <h2 className='text-black text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-bold text-center my-8'>
           APES can design and develop a wide range of control systems utilizing
@@ -53,7 +53,7 @@ const CallToAction: FunctionComponent = () => (
           </p>
         </article>
       </div>
-    </div>
+    </article>
   </section>
 );
 

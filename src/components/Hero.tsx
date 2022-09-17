@@ -3,11 +3,13 @@ import { FunctionComponent } from 'react';
 const Hero: FunctionComponent<{
   onScrollClick: () => void;
 }> = ({ onScrollClick }) => (
-  <section className='bg-[#b8ff65] p-8 rounded-[2rem] xl:rounded-[3rem] mb-20'>
-    <h1 className='xl:px-20 text-black text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-bold text-center my-8'>
+  <section
+    className={`p-8 xl:p-20 rounded-[2rem] xl:rounded-[3rem] mb-20 bg-contain md:bg-cover bg-bottom md:bg-center bg-no-repeat bg-[url('https://moonli.me/wp-content/themes/moonli/images/hero_background.png')] bg-[#b8ff65]`}
+  >
+    <h1 className='sm:px-20 md:px-32 xl:px-64 text-black text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-bold text-center my-8'>
       We offer expertise in custom automation and control systems solutions.
     </h1>
-    <p className='md:px-20 xl:px-48 my-2 text-center text-black font-normal md:font-medium text-sm md:text-base'>
+    <p className='px-12 sm:px-32 md:px-48 xl:px-80 my-2 text-center text-black font-normal md:font-medium text-sm md:text-base'>
       We provide automation services from conception through completion on a
       fixed price or T&M basis. APES can design and develop a wide range of
       control systems utilizing any style of PLCs.
