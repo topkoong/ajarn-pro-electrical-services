@@ -8,12 +8,14 @@ import Reliability from '@components/Reliability';
 import { useRef } from 'react';
 
 const Home: NextPage = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const handleClick = () => ref.current?.scrollIntoView({ behavior: 'smooth' });
+  const featureRef = useRef<HTMLDivElement>(null);
+  const handleHeroClick = () =>
+    featureRef.current?.scrollIntoView({ behavior: 'smooth' });
+
   return (
     <main className='container p-8'>
-      <Hero onScrollClick={handleClick} />
-      <Feature ref={ref} />
+      <Hero onScrollClick={handleHeroClick} />
+      <Feature ref={featureRef} />
       <CallToAction />
       <Reliability />
       <Charity />

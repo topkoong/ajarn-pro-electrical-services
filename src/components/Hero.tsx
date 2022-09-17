@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react';
 
+// const Hero = forwardRef<HTMLElement, HeroProps>(({onScrollClick}, ref) => (
+
 const Hero: FunctionComponent<{
   onScrollClick: () => void;
 }> = ({ onScrollClick }) => (
@@ -23,9 +25,9 @@ const Hero: FunctionComponent<{
         <svg
           className='w-6 h-6 text-white'
           fill='none'
-          stroke-linecap='round'
-          stroke-linejoin='round'
-          stroke-width='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+          strokeWidth='2'
           viewBox='0 0 24 24'
           stroke='currentColor'
         >

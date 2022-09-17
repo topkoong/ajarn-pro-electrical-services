@@ -1,11 +1,15 @@
-import { FunctionComponent } from 'react';
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import { forwardRef } from 'react';
 import { useState } from 'react';
 
-const Navbar: FunctionComponent = () => {
+// TODO
+// Update image tag
+
+const Navbar = forwardRef<HTMLHeadingElement>((_, ref) => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   return (
-    <header>
+    <header ref={ref}>
       <nav className='bg-white px-2 sm:px-4 py-2.5'>
         <div className='flex flex-wrap justify-between items-center mx-auto'>
           <Link href='/'>
@@ -13,7 +17,7 @@ const Navbar: FunctionComponent = () => {
               <img
                 src='./icons/logo.svg'
                 className='mr-3 h-6 sm:h-9'
-                alt='Ajarn "PRO" Electrical Services Logo'
+                alt='Ajarn "PRO" Electrical Services Navbar Logo'
               />
               <span className='self-center text-xl font-semibold whitespace-nowrap'>
                 Electrical Services
@@ -89,6 +93,8 @@ const Navbar: FunctionComponent = () => {
       </nav>
     </header>
   );
-};
+});
+
+Navbar.displayName = 'Navbar';
 
 export default Navbar;
